@@ -3,7 +3,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: smtp-gateway
-  namespace: workloads
+  namespace: my-apps
   labels:
     apps.tanzu.vmware.com/workload-type: server
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
@@ -40,7 +40,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: smtp-sink
-  namespace: workloads  
+  namespace: my-apps  
   labels:
     apps.tanzu.vmware.com/workload-type: worker
     apps.tanzu.vmware.com/auto-configure-actuators: "true"
