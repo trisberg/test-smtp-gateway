@@ -1,0 +1,32 @@
+id: 89aa1dcf-d750-405e-894e-ccbe31fc69ab
+timestamp: 2024-06-26T14:11:52.643Z
+source: TAP-GUI
+username: guest
+options:
+  projectName: spring-smtp-gateway
+  containerPort: "1026"
+  servicePort: "25"
+  workloadNamespace: workloads
+  brokerType: rabbitmq
+  msgbrokerName: msgbroker-spring-smtp-gateway
+  includeBuildToolWrapper: true
+accelerator:
+  name: spring-smtp-gateway
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+    subPath: spring-smtp-gateway
+    ref: main
+    commit: ff98dc98878f6483de1fe7dd90a304ed561249c0
+fragments:
+  - name: build-wrapper-maven
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/build-wrapper-maven
+      ref: main
+      commit: ff98dc98878f6483de1fe7dd90a304ed561249c0
+  - name: tap-workload
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/tap-workload
+      ref: main
+      commit: ff98dc98878f6483de1fe7dd90a304ed561249c0
