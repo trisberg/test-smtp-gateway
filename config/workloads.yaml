@@ -21,7 +21,7 @@ spec:
       name: msgbroker-spring-smtp-gateway
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/trisberg/test-smtp-gateway.git
       ref:
         branch: main
     subPath: smtp-gateway
@@ -62,7 +62,7 @@ spec:
         value: "21"   
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/trisberg/test-smtp-gateway.git
       ref:
         branch: main
     subPath: smtp-sink
